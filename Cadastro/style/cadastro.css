@@ -1,0 +1,112 @@
+@import url("/style/reset.css");
+
+
+@font-face {
+    font-family: 'BraveSansText-SemiBold';
+    src: url(/Novas_Fontes/Breve\ Sans\ Text\ Semi\ Bold.otf  );
+}
+
+@font-face {
+    font-family: 'BraveSansText-Light';
+    src: url(/Novas_Fontes/Breve\ Sans\ Text\ Light.otf  );
+}
+
+body {
+    background-image: url(../images/bkd.png);
+    background-size: cover;
+    color: #EDE9E9;
+
+}
+
+.textos {
+
+    background-image: url(../images/luz.png);
+    filter: brightness(1.2);
+    background-size: cover;
+    background-position: center right;
+
+    text-align: center;
+
+    color: #EDE9E9;
+
+    position: absolute;
+
+    width: 760px;
+    height: 440px;
+
+    left: 5%;
+    top: 20%;
+
+
+
+}
+
+#titulo {
+    padding-top: 9%;
+    font-family: 'BraveSansText-SemiBold';
+    font-size: 40px;
+
+
+
+}
+
+#texto {
+    font-family: 'BraveSansText-Light';
+    font-size: 20px;
+
+
+}
+
+.form {
+    position: absolute;
+    margin-top: 3%;
+    margin-left: 5%;
+    font-family: 'BraveSansText-Light';
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    left: 60%;
+}
+
+.passos {
+    text-align: center;
+    margin-right: 10px;
+    font-size: 15px;
+    color: white;
+    font-family: 'BraveSansText-Light';
+}
+
+input {
+    width: 350px;
+    height: 30px;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    margin: 20px;
+    margin-right: 50px;
+    font-size: 15px;
+    font-family: novafonte;
+    background-color: rgba(20, 24, 34, 1);
+    border: 2px solid rgb(255, 255, 255);
+
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+.avancar {
+    margin-left: 150px;
+    width: 100px;
+    height: 45px;
+    color: white;
+    background-color: #05A9D0;
+    padding-bottom: 25px;
+    border-radius: 15px;
+    margin-top: 20px;
+    text-align: center;
+
+}
