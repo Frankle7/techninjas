@@ -51,7 +51,7 @@ const setMusicaAtual = () => {
     setTimeout(() => {
         barraProgresso.max = audio.duration;
         tempoTotal.innerHTML = formatarTempo(audio.duration);
-    }, 300);
+    }, 1000);
 };
 
 function formatarTempo(tempo) {
