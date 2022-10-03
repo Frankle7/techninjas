@@ -64,6 +64,7 @@ main {
     display: flex;
     font-family: Breve-Sans-Text-Medium;
     font-weight: 500;
+    overflow-x: hidden;
 }
 
 .section-1 .esquerda {
@@ -123,6 +124,7 @@ main {
 
 .progresso {
     margin-left: 15px;
+    width: 225px;
 }
 
 .progresso span {
@@ -130,21 +132,52 @@ main {
     color: #d9d9d9;
 }
 
-.progresso progress {
-    width: 20vw;
-    border-radius: 25px;
-    height: 5px;
+.progresso input {
+    overflow: hidden;
+    width: 100%;
     -webkit-appearance: none;
-}
-
-.progresso progress::-webkit-progress-bar {
+    height: 5px;
+    border-radius: 10px;
     background-color: #948b8b;
-    border-radius: 50px;
+    cursor: pointer;
 }
 
-.progresso progress::-webkit-progress-value {
-    border-radius: 50px;
-    background-color: #05a9d0;
+.progresso input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    background: #05a9d0;
+    box-shadow: -400px 0 0 400px #05a9d0;
+}
+
+.pulse {
+    animation: pulse 0.7s infinite;
+
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        /* -webkit-transform: scale(1); */
+        -webkit-filter: brightness(100%);
+    }
+    100% {
+        /* -webkit-transform: scale(1.1); */
+        -webkit-filter: brightness(200%);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        /* transform: scale(1); */
+        filter: brightness(100%);
+    }
+    100% {
+        /* transform: scale(1.1); */
+        filter: brightness(200%);
+    }
 }
 
 .section-1 .direita {

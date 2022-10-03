@@ -11,6 +11,8 @@
 </head>
 
 <body>
+    <audio src="" id="audio"></audio>
+
     <header>
         <nav>
             <img src="./img/home/logo.png" alt="logo" class="logo">
@@ -25,23 +27,23 @@
     <main>
         <section class="section-1">
             <div class="esquerda">
-                <span class="titulo"><span>Tech</span> ninjas</span>
+                <span class="titulo pulsar"><span>Tech</span> ninjas</span>
                 <p>Receba convite para cantar em varios ambientes.</p>
                 <div class="player">
-                    <img src="./img/home/back.png" alt="" class="back">
-                    <img src="./img/home/play.png" alt="" class="play">
-                    <img src="./img/home/next.png" alt="" class="next">
+                    <img src="./img/home/back.png" alt="" class="back" id="back" />
+                    <img src="./img/home/play.png" alt="" class="play" id="play" />
+                    <img src="./img/home/next.png" alt="" class="next" id="next" />
                     <div class="progresso">
                         <span>
                             <span class="atual" id="atual">00:00 </span> &nbsp; / &nbsp; <span class="total" id="total">
-                                00:25</span>
+                                00:00</span>
                         </span>
-                        <progress id="progress" min="0" step="1" max="100" value="25">50</progress>
+                        <input type="range" class="" id="progresso" value="25">
                     </div>
                 </div>
             </div>
             <div class="direita">
-                <img src="./img/home/Imagem_destaque.png" alt="imagem">
+                <img src="./img/home/Imagem_destaque.png" class="pulsar" alt="imagem">
             </div>
         </section>
 
@@ -213,6 +215,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/index.js"></script>
 </body>
 
 </html>
