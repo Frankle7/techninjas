@@ -84,3 +84,12 @@ barraProgresso.addEventListener("change", () => {
 });
 
 setMusicaAtual();
+
+// -------------- menu
+
+const menu = document.getElementById("menu-principal");
+const menuIcon = document.getElementById("menu-icon");
+
+menuIcon.addEventListener("click", () => {
+    menu.classList.toggle("open");
+});

@@ -29,6 +29,7 @@ header nav {
     width: 82%;
     margin: 0 auto;
     padding: 30px 0;
+    align-items: center;
 }
 
 .logo {
@@ -472,4 +473,133 @@ footer .navegacao div h5 {
 
 .redes img {
     width: 30px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon img {
+    width: 30px;
+}
+
+/* responsivo */
+
+@media (max-width: 768px) {
+    .section-1 {
+        margin-top: -2rem;
+    }
+
+    .section-4 .conteudo {
+        width: 100%;
+    }
+
+    .section-4 .borda {
+        width: 100%;
+    }
+
+    .section-1 .esquerda {
+        width: 100%;
+    }
+
+    .section-1 .esquerda .player {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .section-1 .esquerda p {
+        margin-left: 0;
+    }
+
+    .section-1 .direita {
+        display: none;
+    }
+
+    .section-2 div {
+        flex-direction: column;
+        height: auto;
+        gap: 2em;
+        padding: 2rem 1rem;
+    }
+
+    .section-2 h5 {
+        text-align: center;
+    }
+
+    .section-2 h5,
+    .section-2 p {
+        width: 100% !important;
+    }
+
+    .section-5 .direita {
+        display: none;
+    }
+
+    .section-5 .esquerda {
+        width: 100%;
+    }
+
+    .menu-principal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        flex-direction: column;
+        background-color: #141822;
+        padding: 5rem 0 5rem 3rem;
+        gap: 2rem;
+        transform: translateX(100%);
+        transition: transform 0.6s ease-in;
+    }
+
+    .menu-principal li {
+        width: 100%;
+    }
+
+    .menu-principal.open {
+        transform: translateX(0);
+        z-index: 9;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 500px) {
+    .diferenciais {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .diferencial {
+        width: 100% !important;
+    }
+
+    .privacidade {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    footer {
+        padding-top: 1rem;
+    }
+
+    footer .navegacao {
+        margin-top: 5rem;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    footer .navegacao div {
+        width: 100%;
+        text-align: center;
+    }
 }
