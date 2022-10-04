@@ -6,6 +6,7 @@
 
 body {
     font-family: "Alef";
+    background-color: #141822;
 }
 
 a {
@@ -238,40 +239,10 @@ main {
     width: 25%;
 }
 
-.section-3 {
-    width: 100%;
-    background-color: #1f2532;
-}
-
-.section-3 > div {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.section-3 .fundo_microfone {
-    background-image: url("../img/home/fundo_microfone.png");
-    width: 100%;
-    height: 450px;
-    background-size: cover;
-    border-radius: 20px;
-    margin-bottom: 25px;
-}
-
-.section-3 .patrocinios {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.section-3 .patrocinios img {
-    width: 100px;
-    height: 100%;
-}
-
 .section-4 {
     width: 100%;
     background-color: #1f2532;
-    padding: 75px 0 40px 0;
+    padding: 0px 0 40px 0;
 }
 
 .section-4 .borda {
@@ -411,8 +382,11 @@ main {
 .section-6 {
     width: 100%;
     height: 500px;
-    background-image: url(../img/home/show.png);
+    background-image: url(../img/home/fundo_microfone.png);
     background-size: cover;
+    /* margin-top: -50px; */
+    position: relative;
+    z-index: -1;
 }
 
 footer {
@@ -486,4 +460,16 @@ footer .navegacao div h5 {
 
 .fim-footer span {
     font-size: 15px;
+}
+
+.redes {
+    width: 150px;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.redes img {
+    width: 30px;
 }
