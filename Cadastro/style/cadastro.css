@@ -42,9 +42,9 @@ body {
 }
 
 #titulo {
-    padding-top: 9%;
+    padding-top: 15%;
     font-family: 'BraveSansText-SemiBold';
-    font-size: 40px;
+    font-size: 50px;
 
 
 
@@ -52,7 +52,7 @@ body {
 
 #texto {
     font-family: 'BraveSansText-Light';
-    font-size: 20px;
+    font-size: 25px;
 
 
 }
@@ -70,43 +70,109 @@ body {
 }
 
 .passos {
-    text-align: center;
-    margin-right: 10px;
+    
     font-size: 15px;
     color: white;
     font-family: 'BraveSansText-Light';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30%;
+    
 }
 
 input {
     width: 350px;
     height: 30px;
     color: white;
-    padding: 10px;
     border-radius: 15px;
     margin: 20px;
-    margin-right: 50px;
     font-size: 15px;
-    font-family: novafonte;
+    font-family: 'BraveSansText-SemiBold';
     background-color: rgba(20, 24, 34, 1);
     border: 2px solid rgb(255, 255, 255);
+    
 
 }
 
-.btn {
+.btnGrey {
+    width: 100px;
+    height: 45px;
+    color: white;
+    background-color: ;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 15px;
+
+
+
+
+}
+.btn
+{
+    align-items: center;
     display: flex;
-    flex-direction: row;
-    margin-right: 5px;
+    justify-content: start;
+    padding-left: 8%;
+    
 }
 
+.btnGrey:hover {
+    background-color: #0B7A9F;
+    cursor: pointer;
+}
 .avancar {
-    margin-left: 150px;
     width: 100px;
     height: 45px;
     color: white;
     background-color: #05A9D0;
-    padding-bottom: 25px;
-    border-radius: 15px;
-    margin-top: 20px;
     text-align: center;
 
+
+
+    
+}
+.avancar:hover {
+    background-color: #0B7A9F;
+    cursor: pointer;
+}
+
+
+.check {
+    width: 15px;
+    height: 15px;
+    color: lightskyblue;
+    margin-right: 10px;
+    text-align: center;
+    align-items: center;   
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'BraveSansText-SemiBold';
+    color: lightskyblue;
+}
+p {
+    font-size: 20px;
+    font-family: ;
+    color: white;
+    font-style: italic;
+    
+}
+
+.btnBlue {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+    
+
+}
+
+.btnBlue:hover {
+    background-color: #0B7A9F;
+    cursor: pointer;
 }
