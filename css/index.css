@@ -602,4 +602,8 @@ footer .navegacao div h5 {
         width: 100%;
         text-align: center;
     }
+
+    .saiba-mais {
+        margin-left: -25px;
+    }
 }
