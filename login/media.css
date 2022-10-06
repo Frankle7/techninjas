@@ -22,7 +22,7 @@
 
 
     .conteundo_esquerdo {
-        width: 376px;
+        width: 200px;
         height: 200px;
         margin-top: 200px;
         position: relative;
@@ -37,7 +37,7 @@
     .conteudo_direito {
         margin: 0;
         margin-top: 0%;
-        margin-left: 40px;
+        margin-left: 20px;
         padding: 0;
         position: relative;
         font-family: novafonte;
@@ -45,7 +45,7 @@
 
     .img_instrumento {
         display: none;
-        width: 375px;
+        width: 100px;
         height: 500px;
         margin-top: 0;
         margin-bottom: 0;
@@ -53,6 +53,7 @@
 
 
     }
+    
     .titulo{
         margin-left: 75px;
         color:white;
@@ -63,7 +64,7 @@
 
 
     input {
-        width: 228px;
+        width: 220px;
         height: 30px;
         color: white;
         padding: 10px;
@@ -129,6 +130,19 @@
 
     }
 
+    @media only screen and (max-width:667px) {
+
+
+        .conteudo_direito {
+            margin: 0;
+            margin-top: 0%;
+            margin-left: 40px;
+            padding: 0;
+            position: relative;
+            font-family: novafonte;
+        }
+    
+    }
 
 
 }
