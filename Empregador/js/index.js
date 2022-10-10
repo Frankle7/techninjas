@@ -45,7 +45,7 @@ function functionPulsar() {
 
 const setMusicaAtual = () => {
     barraProgresso.value = 0;
-    audio.src = "../../musics/home.mp3";
+    audio.src = "../musics/home.mp3";
     tempoAtual.innerHTML = "00:00";
 
     setTimeout(() => {
@@ -85,44 +85,94 @@ barraProgresso.addEventListener("change", () => {
 
 setMusicaAtual();
 
-let carousel = document.getElementById("carousel");
-let cards = document.querySelectorAll(".card");
-let leftBtn = document.getElementById("leftArrow");
-let rightBtn = document.getElementById("rightArrow");
-let section = 0;
+// -------------------------------------------------
 
-leftBtn.addEventListener("click", () => {
-    if (section > 0) {
-        section--;
-        carousel.scrollLeft = section * (window.innerWidth - 10) + section * 10;
-    }
+$('#carousel').slick({
+    dots: false,
+    arrows: true,
+    prevArrow: $('#leftArrow'),
+    nextArrow: $('#rightArrow'),
+    infinite: true,
+    slidesToShow: 4,
+    touchMove: false,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]    
 });
 
-rightBtn.addEventListener("click", () => {
-    if (section < cards.length / 3) {
-        section++;
-        carousel.scrollLeft = section * (window.innerWidth - 10) + section * 10;
-    }
+$('#carousel2').slick({
+    dots: false,
+    arrows: true,
+    prevArrow: $('#leftArrow2'),
+    nextArrow: $('#rightArrow2'),
+    infinite: true,
+    slidesToShow: 4,
+    touchMove: false,
+    responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+      ]  
 });
 
-let carousel2 = document.getElementById("carousel2");
-let cards2 = document.querySelectorAll(".card2");
-let leftBtn2 = document.getElementById("leftArrow2");
-let rightBtn2 = document.getElementById("rightArrow2");
-let section2 = 0;
+// ---------------------------
 
-leftBtn2.addEventListener("click", () => {
-    if (section2 > 0) {
-        section2--;
-        carousel2.scrollLeft =
-            section2 * (window.innerWidth - 10) + section2 * 10;
-    }
+
+const menu = document.getElementById("menu-principal");
+const menuIcon = document.getElementById("menu-icon-principal");
+
+menuIcon.addEventListener("click", () => {
+    menu.classList.toggle("open");
 });
 
-rightBtn2.addEventListener("click", () => {
-    if (section2 < cards2.length / 3) {
-        section2++;
-        carousel2.scrollLeft =
-            section2 * (window.innerWidth - 10) + section2 * 10;
-    }
-});
+// ------------------------
+
+// const artistas = document.querySelectorAll(".artista");
+
+// artistas.forEach(element => {
+//   element.addEventListener('click', () => {
+    
+//   })
+// });
