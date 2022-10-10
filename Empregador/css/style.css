@@ -60,7 +60,7 @@ header .pesquisar {
     border-radius: 25px;
 }
 
-#menu-icon-principal{
+#menu-icon-principal {
     display: none;
 }
 
@@ -250,7 +250,7 @@ main .direita p {
     gap: 1rem;
 }
 
-.pointer{
+.pointer {
     cursor: pointer;
 }
 
@@ -280,7 +280,7 @@ main .direita p {
     margin-bottom: 1.5rem;
 }
 
-.artistas > a:hover{
+.artistas > a:hover {
     /* opacity: .5; */
     box-shadow: 0px 0px 7.51349px rgba(255, 255, 255, 0.8);
 }
@@ -315,8 +315,7 @@ main .direita p {
     right: 0;
 }
 
-
-.container-depoimentos{
+.container-depoimentos {
     text-align: center;
     color: #fff;
     font-weight: 300;
@@ -324,21 +323,20 @@ main .direita p {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background: linear-gradient(0deg, #1F2532, #1F2532);
+    background: linear-gradient(0deg, #1f2532, #1f2532);
     padding-top: 1rem;
 }
 
-.depoimentos{
+.depoimentos {
     display: flex;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
     margin: auto;
     margin-bottom: 0 !important;
     flex-wrap: wrap;
-    
 }
 
-.depoimentos img{
+.depoimentos img {
     max-width: 100%;
     margin: 0 auto;
 }
@@ -350,7 +348,6 @@ footer {
     background-color: #1f2532;
     padding-bottom: 5px;
 }
-
 
 footer .navegacao {
     width: 80%;
@@ -405,32 +402,32 @@ footer .navegacao div h5 {
 /* responsivo */
 
 @media (max-width: 768px) {
-    .depoimentos{
+    .depoimentos {
         flex-direction: column;
         align-items: center;
     }
 
-    .navegacao{
+    .navegacao {
         gap: 1rem !important;
     }
 
-    #menu-icon-principal{
+    #menu-icon-principal {
         display: initial;
     }
 
-    .direita > img{
+    .direita > img {
         display: none;
     }
 
-    .conteudo-1{
+    .conteudo-1 {
         padding: 2rem 1rem !important;
     }
 
-    .esquerda{
+    .esquerda {
         margin-left: 5rem !important;
     }
 
-    .player{
+    .player {
         width: 80%;
         margin: 2rem auto;
     }
@@ -467,16 +464,16 @@ footer .navegacao div h5 {
 }
 
 @media (max-width: 500px) {
-    .esquerda{
+    .esquerda {
         margin-left: 2rem !important;
     }
 
-    .direita p{
+    .direita p {
         font-size: 1rem;
         margin: 0 !important;
     }
-    
-    .conteudo-1{
+
+    .conteudo-1 {
         padding: 2rem 1rem !important;
         text-align: center;
         gap: 4rem !important;
@@ -500,5 +497,4 @@ footer .navegacao div h5 {
     .saiba-mais {
         margin-left: -25px;
     }
-    
 }
