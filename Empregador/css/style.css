@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    animation: all 1s ease-in-out;
+}
+
+img {
+    max-width: 100%;
 }
 
 body {
@@ -19,11 +26,11 @@ li {
 }
 
 header {
-    background-color: #1f2532;
     width: 100%;
 }
 
-header nav {
+header nav,
+header .pesquisar {
     display: flex;
     justify-content: space-between;
     width: 82%;
@@ -53,43 +60,243 @@ header nav {
     border-radius: 25px;
 }
 
+.pesquisar .menu-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.pesquisar .pesquisa a img {
+    width: 15px;
+    height: 15px;
+}
+
+.pesquisar .perfil {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+header .pesquisar {
+    padding: 0 1rem;
+}
+
+.pesquisa {
+    height: 25px;
+    width: 40vw;
+}
+
+.pesquisar {
+    justify-content: space-evenly !important;
+}
+
+.pesquisa input {
+    height: 100%;
+    width: 100%;
+    padding: 0 0.4rem;
+    border: none;
+}
+
+.pesquisar .pesquisa,
+.pesquisar .pesquisa a {
+    display: flex;
+    align-items: center;
+}
+
+.pesquisar .pesquisa a {
+    height: 100%;
+    padding: 0 1rem;
+    background-color: #767f8b;
+}
+
 /* ------------------------------ */
 
 main {
     width: 100%;
     height: 100px;
-    padding: 2rem 4rem;
+    padding-top: 2rem;
 }
 
-main h2 {
-    color: #fff;
-    margin: 2rem 0;
-}
-
-main .artistas {
+main .principal .conteudo-1 {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    flex-wrap: wrap;
+    height: auto;
+    gap: 2rem;
+    padding: 2rem 4rem;
+
+    color: #fff;
 }
 
-.artista {
-    color: #fff;
+main .esquerda {
     display: flex;
     flex-direction: column;
-    background: #1f2532;
-    box-shadow: 0px 0px 5.98984px rgba(0, 0, 0, 0.8);
-    border-radius: 11.9797px;
+    justify-content: space-around;
+    height: 400px;
+    width: 10%;
     text-align: center;
-    padding: 2rem 1rem;
-    opacity: 0.7;
+    font-family: "Inter";
+}
+
+main .esquerda div h4 {
+    font-size: 2rem;
+}
+
+main .esquerda div span {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+main .direita {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.3rem;
+}
+
+main .direita p {
+    margin: 0 3rem;
+}
+
+.player {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.player span {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.back,
+.next {
+    width: 25px;
+    height: 15px;
     cursor: pointer;
 }
 
-.artista:hover {
-    opacity: 1;
+.play {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px;
 }
 
-.artista > span {
-    font-size: 20px;
+.progresso {
+    margin-left: 15px;
+    width: 225px;
+}
+
+.progresso span {
+    font-size: 10px;
+    color: #d9d9d9;
+}
+
+.progresso input {
+    overflow: hidden;
+    width: 100%;
+    -webkit-appearance: none;
+    height: 5px;
+    border-radius: 10px;
+    background-color: #948b8b;
+    cursor: pointer;
+}
+
+.progresso input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1px;
+    height: 20px;
+    background: #05a9d0;
+    box-shadow: -400px 0 0 400px #05a9d0;
+}
+
+.principal h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Inter";
+}
+
+.principal h1 span {
+    color: #05a9d0;
+}
+
+.player {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container-artistas {
+    margin: 2rem auto;
+    position: relative;
+}
+
+.container-artistas > h3 {
+    width: 100%;
+    text-align: left;
+    padding: 2px 1rem;
+    background-color: #3c3c44;
+    color: #05a9d0;
+    margin-top: 2rem;
+}
+
+.artistas {
+    overflow-x: hidden;
+    display: flex;
+    padding: 1rem 0.4rem;
+    gap: 1rem;
+}
+
+.artista {
+    flex-shrink: 0;
+    width: 250px;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+
+    padding: 1.5rem;
+    background: #1f2532;
+    box-shadow: 0px 0px 7.51349px rgba(0, 0, 0, 0.8);
+    border-radius: 15.027px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artista img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 1.5rem;
+}
+
+.voltar p,
+.avancar p {
+    background-color: #000;
+    height: 300px;
+    width: 50px;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.267);
+    color: rgba(255, 255, 255, 0.555);
+    border-radius: 5px;
+}
+
+.voltar,
+.avancar {
+    position: absolute;
+    z-index: 5;
+    cursor: pointer;
+    bottom: 1rem;
+}
+
+.voltar {
+    left: 0;
+}
+
+.avancar {
+    right: 0;
 }

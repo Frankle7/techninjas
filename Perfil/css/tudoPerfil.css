@@ -1,14 +1,15 @@
-main {
+/* main {
     width: 100%;
     color: #fff;
     padding: 3rem 4rem 2rem 4rem;
-}
+} */
 
-main .conteudo {
+main .content {
     display: flex;
     width: 100%;
     justify-content: space-between;
     gap: 6rem;
+    margin-top: 5rem;
 }
 
 main .esquerda {
