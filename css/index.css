@@ -1,11 +1,14 @@
+    @font-face {
+        font-family: Breve-Sans-Text-light;
+        src: url(../fonts/Breve\ Sans\ Text\ Light.otf);
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    font-family: "Alef";
+    font-family: Breve-Sans-Text-Medium;
     background-color: #141822;
 }
 
@@ -86,7 +89,7 @@ main {
     font-size: 60px;
     text-align: center;
     width: 90%;
-    margin: 0 auto;
+    margin-left: 40px;
     
     
 }
@@ -234,7 +237,7 @@ main {
 }
 
 .section-2 div p {
-    font-family: "Alef", sans-serif;
+    font-family: Breve-Sans-Text-light;
     display: block;
     width: 35%;
     font-weight: 400;
@@ -267,7 +270,7 @@ main {
     background-color: #1f2532;
     padding: 50px;
     border-radius: 20px;
-    font-family: "Alef", sans-serif;
+    font-family: 'Breve-Sans-Text-light';
 }
 
 .section-4 .conteudo h4 {
@@ -338,6 +341,7 @@ main {
     color: #0bfcfa;
     font-size: 18px;
     font-weight: 400;
+    font-family: Breve-Sans-Text-Medium;;
 }
 
 .section-5 .diferencial p {
