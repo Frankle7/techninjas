@@ -60,7 +60,11 @@ header .pesquisar {
     border-radius: 25px;
 }
 
-.pesquisar .menu-icon {
+#menu-icon-principal {
+    display: none;
+}
+
+.menu-icon {
     width: 20px;
     height: 20px;
 }
@@ -112,7 +116,6 @@ header .pesquisar {
 
 main {
     width: 100%;
-    height: 100px;
     padding-top: 2rem;
 }
 
@@ -242,13 +245,18 @@ main .direita p {
 
 .artistas {
     overflow-x: hidden;
-    display: flex;
+    display: flex !important;
     padding: 1rem 0.4rem;
     gap: 1rem;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 .artista {
-    flex-shrink: 0;
+    margin-right: 15px;
+    flex-shrink: 0 !important;
     width: 250px;
     height: 300px;
     text-align: center;
@@ -259,9 +267,10 @@ main .direita p {
     box-shadow: 0px 0px 7.51349px rgba(0, 0, 0, 0.8);
     border-radius: 15.027px;
 
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     align-items: center;
+    cursor: pointer;
 }
 
 .artista img {
@@ -269,6 +278,11 @@ main .direita p {
     width: 200px;
     height: 200px;
     margin-bottom: 1.5rem;
+}
+
+.artistas > a:hover {
+    /* opacity: .5; */
+    box-shadow: 0px 0px 7.51349px rgba(255, 255, 255, 0.8);
 }
 
 .voltar p,
@@ -299,4 +313,188 @@ main .direita p {
 
 .avancar {
     right: 0;
+}
+
+.container-depoimentos {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: linear-gradient(0deg, #1f2532, #1f2532);
+    padding-top: 1rem;
+}
+
+.depoimentos {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    margin-bottom: 0 !important;
+    flex-wrap: wrap;
+}
+
+.depoimentos img {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: 0 !important;
+    padding-top: 1rem;
+    width: 100%;
+    background-color: #1f2532;
+    padding-bottom: 5px;
+}
+
+footer .navegacao {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .navegacao div {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+footer .navegacao div h5 {
+    font-size: 19px;
+}
+
+.fim-footer {
+    color: #fff;
+    text-align: center;
+
+    border-top: 2px solid transparent;
+    border-image: linear-gradient(90deg, #0071e3 1.31%, #0bfcfa 100%);
+    border-image-slice: 1;
+    padding-top: 10px;
+}
+
+.fim-footer img {
+    width: 100px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.fim-footer span {
+    font-size: 15px;
+}
+
+.redes {
+    width: 150px;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.redes img {
+    width: 30px;
+}
+
+/* responsivo */
+
+@media (max-width: 768px) {
+    .depoimentos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navegacao {
+        gap: 1rem !important;
+    }
+
+    #menu-icon-principal {
+        display: initial;
+    }
+
+    .direita > img {
+        display: none;
+    }
+
+    .conteudo-1 {
+        padding: 2rem 1rem !important;
+    }
+
+    .esquerda {
+        margin-left: 5rem !important;
+    }
+
+    .player {
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .menu-principal {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        flex-direction: column;
+        background-color: #141822;
+        padding: 5rem 0 5rem 3rem;
+        gap: 2rem;
+        transform: translateX(100%);
+        transition: transform 0.6s ease-in;
+    }
+
+    .menu-principal li {
+        width: 100%;
+    }
+
+    .menu-principal.open {
+        transform: translateX(0);
+        z-index: 9;
+    }
+
+    .menu-icon {
+        display: inline-block;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+@media (max-width: 500px) {
+    .esquerda {
+        margin-left: 2rem !important;
+    }
+
+    .direita p {
+        font-size: 1rem;
+        margin: 0 !important;
+    }
+
+    .conteudo-1 {
+        padding: 2rem 1rem !important;
+        text-align: center;
+        gap: 4rem !important;
+    }
+
+    footer {
+        padding-top: 1rem;
+    }
+
+    footer .navegacao {
+        margin-top: 5rem;
+        flex-wrap: wrap;
+        gap: 3rem !important;
+    }
+
+    footer .navegacao div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .saiba-mais {
+        margin-left: -25px;
+    }
 }

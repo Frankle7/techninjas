@@ -5,12 +5,40 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css
+    "
+        />
+        <script
+            src="https://code.jquery.com/jquery-3.6.1.js"
+            integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+            crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" src="./js/slick.js"></script>
+
         <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="../css/fonts.css" />
     </head>
     <body>
         <header>
             <nav>
-                <img src="../../img/home/logo.png" alt="logo" class="logo" />
+                <a href="../index.html">
+                    <img
+                        src="../img/home/logo.png"
+                        alt="logo"
+                        class="logo pointer"
+                    />
+                </a>
+
+                <div class="menu-icon pointer" id="menu-icon-principal">
+                    <img src="../img/home/menu.png" alt="icone de menu" />
+                </div>
 
                 <ul class="menu-principal" id="menu-principal">
                     <li><a href="../index.html">Inicio</a></li>
@@ -24,15 +52,15 @@
                 </ul>
             </nav>
             <div class="pesquisar">
-                <img src="../img/home/menu.png" alt="" class="menu-icon" />
+                <!-- <img src="../img/home/menu.png" alt="" class="menu-icon" id="menu-icon-filtro" /> -->
                 <div class="pesquisa">
                     <input type="text" name="" id="" placeholder="Pesquisar" />
                     <a href="#">
                         <img src="./img/search.png" alt="" />
                     </a>
                 </div>
-                <img src="./img/mic.png" alt="" />
-                <img src="./img/amanda.jpg" alt="" class="perfil" />
+                <img src="./img/mic.png" alt="" class="pointer" />
+                <img src="./img/amanda.jpg" alt="" class="perfil pointer" />
             </div>
         </header>
 
@@ -80,7 +108,7 @@
                         </div>
                         <div>
                             <h4>200+</h4>
-                            <span>Artistas</span>
+                            <span>Artista</span>
                         </div>
                         <div>
                             <h4>25+</h4>
@@ -121,53 +149,63 @@
 
                 <div class="artistas" id="carousel">
                     <div class="artista card">
-                        <img
-                            src="./img/amanda.jpg"
-                            alt=""
-                            class="foto-artista"
-                        />
-                        <span class="nome">Amanda Amandita</span>
-                        <span>Artistas</span>
+                        <a href="../Perfil/meuPerfil.html">
+                            <img
+                                src="./img/amanda.jpg"
+                                alt=""
+                                class="foto-artista"
+                            />
+                            <span class="nome">Amanda Amandita</span>
+                            <span>Artista</span>
+                        </a>
                     </div>
 
                     <div class="artista card">
-                        <img
-                            src="./img/almeida.jpg"
-                            alt=""
-                            class="foto-artista"
-                        />
-                        <span class="nome">Gabriel Almeida</span>
-                        <span>Artistas</span>
+                        <a href="../Perfil/meuPerfil.html">
+                            <img
+                                src="./img/almeida.jpg"
+                                alt=""
+                                class="foto-artista"
+                            />
+                            <span class="nome">Gabriel Almeida</span>
+                            <span>Artista</span>
+                        </a>
                     </div>
 
                     <div class="artista card">
-                        <img
-                            src="./img/Andersom.jpg"
-                            alt=""
-                            class="foto-artista"
-                        />
-                        <span class="nome">Anderson</span>
-                        <span>Artistas</span>
+                        <a href="../Perfil/meuPerfil.html">
+                            <img
+                                src="./img/Andersom.jpg"
+                                alt=""
+                                class="foto-artista"
+                            />
+                            <span class="nome">Anderson</span>
+                            <span>Artista</span>
+                        </a>
                     </div>
 
                     <div class="artista card">
-                        <img
-                            src="./img/Guilherme.jpg"
-                            alt=""
-                            class="foto-artista"
-                        />
-                        <span class="nome">Guilherme</span>
-                        <span>Artistas</span>
+                        <a href="../Perfil/meuPerfil.html">
+                            <img
+                                src="./img/Guilherme.jpg"
+                                alt=""
+                                class="foto-artista"
+                            />
+                            <span class="nome">Guilherme</span>
+                            <span>Artista</span>
+                        </a>
                     </div>
 
                     <div class="artista card">
-                        <img
-                            src="./img/Frankle Souza da Silva.jpg"
-                            alt=""
-                            class="foto-artista"
-                        />
-                        <span class="nome">Franklin</span>
-                        <span>Artistas</span>
+                        <a href="../Perfil/meuPerfil.html">
+                            <img
+                                src="./img/Frankle.jpg"
+                                alt=""
+                                class="foto-artista"
+                            />
+                            <span class="nome">Frankle</span>
+                            <span>Artista</span>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -183,59 +221,129 @@
 
                 <div class="artistas" id="carousel2">
                     <div class="artista card2">
-                        <img
-                            src="./img/amanda.jpg"
-                            alt=""
-                            class="foto-artista"
-                        />
-                        <span class="nome">Amanda Amandita</span>
-                        <span>Artistas</span>
+                        <a href="../Perfil/meuPerfil.html">
+                            <img
+                                src="./img/amanda.jpg"
+                                alt=""
+                                class="foto-artista"
+                            />
+                            <span class="nome">Amanda Amandita</span>
+                            <span>Artista</span>
+                        </a>
                     </div>
 
                     <div class="artista card2">
-                        <img
-                            src="./img/almeida.jpg"
-                            alt=""
-                            class="foto-artista"
-                        />
-                        <span class="nome">Gabriel Almeida</span>
-                        <span>Artistas</span>
+                        <a href="../Perfil/meuPerfil.html">
+                            <img
+                                src="./img/almeida.jpg"
+                                alt=""
+                                class="foto-artista"
+                            />
+                            <span class="nome">Gabriel Almeida</span>
+                            <span>Artista</span>
+                        </a>
                     </div>
 
                     <div class="artista card2">
-                        <img
-                            src="./img/Andersom.jpg"
-                            alt=""
-                            class="foto-artista"
-                        />
-                        <span class="nome">Anderson</span>
-                        <span>Artistas</span>
+                        <a href="../Perfil/meuPerfil.html">
+                            <img
+                                src="./img/Andersom.jpg"
+                                alt=""
+                                class="foto-artista"
+                            />
+                            <span class="nome">Anderson</span>
+                            <span>Artista</span>
+                        </a>
                     </div>
 
                     <div class="artista card2">
-                        <img
-                            src="./img/Guilherme.jpg"
-                            alt=""
-                            class="foto-artista"
-                        />
-                        <span class="nome">Guilherme</span>
-                        <span>Artistas</span>
+                        <a href="../Perfil/meuPerfil.html">
+                            <img
+                                src="./img/Guilherme.jpg"
+                                alt=""
+                                class="foto-artista"
+                            />
+                            <span class="nome">Guilherme</span>
+                            <span>Artista</span>
+                        </a>
                     </div>
 
-                    <div class="artista card2">
-                        <img
-                            src="./img/Frankle Souza da Silva.jpg"
-                            alt=""
-                            class="foto-artista"
-                        />
-                        <span class="nome">Franklin</span>
-                        <span>Artistas</span>
+                    <div class="artista card">
+                        <a href="../Perfil/meuPerfil.html">
+                            <img
+                                src="./img/Frankle.jpg"
+                                alt=""
+                                class="foto-artista"
+                            />
+                            <span class="nome">Frankle</span>
+                            <span>Artista</span>
+                        </a>
                     </div>
+                </div>
+            </section>
+
+            <section class="container-depoimentos">
+                <span>DEPOIMENTOS DE QUEM USA A NOSSA PLATAFORMA</span>
+                <div class="depoimentos">
+                    <img src="./img/cx1.png" alt="" />
+                    <img src="./img/cx2.png" alt="" />
+                    <img src="./img/cx3.png" alt="" />
                 </div>
             </section>
         </main>
 
+        <footer>
+            <div class="navegacao">
+                <div>
+                    <h5>Conheça-nos</h5>
+                    <span>Sobre nós</span>
+                    <span>Redes sociais</span>
+                    <span>Comunicados</span>
+                </div>
+                <div>
+                    <h5>Deixo-nos ajudar você</h5>
+                    <a href="./login/index.html">
+                        <span>Sua conta</span>
+                    </a>
+                    <a href="./suporte/suporte/termos/index.html">
+                        <span>Termos de contrato</span>
+                    </a>
+                    <a href="./suporte/suporte.html">
+                        <span>FAQ</span>
+                    </a>
+                    <a href="./suporte/suporte/privacidade/index.html">
+                        <span>Privacidade</span>
+                    </a>
+                </div>
+                <div>
+                    <h5>Contatos</h5>
+                    <div class="redes">
+                        <img src="../img/home/face.png" alt="" />
+                        <img src="../img/home/insta.png" alt="" />
+                        <img src="../img/home/twitter.png" alt="" />
+                    </div>
+                    <br />
+                    <span>E-mail: SomPeriferico@gmail.com</span>
+                </div>
+            </div>
+            <div class="fim-footer">
+                <img src="../img/home/logo.png" class="logo" alt="" />
+                <div>
+                    <span>Condições de uso</span>
+                    <span> | </span>
+                    <span>Notificações de privacidade</span>
+                    <span> | </span>
+                    <span>Cookies</span>
+                    <span> | </span>
+                    <span>Anúncio baseados em interesses</span>
+                    <span> | </span>
+                    <span>&copy;2022 SomPeriferico.com</span>
+                </div>
+            </div>
+        </footer>
+
         <audio src="" id="audio"></audio>
+
         <script src="./js/index.js"></script>
     </body>
 </html>
