@@ -1,11 +1,11 @@
-@font-face {
-    font-family: Breve-Sans-Text-light;
-    src: url(/fonts/Breve\ Sans\ Text\ Light.otf);
-}
-@font-face {
-    font-family: Breve-Sans-Text-Medium;
-    src: url(/fonts/BreveSansTextMedium.otf);
-}
+    @font-face {
+        font-family: Breve-Sans-Text-light;
+        src: url(/fonts/Breve\ Sans\ Text\ Light.otf);
+    }
+    @font-face {
+        font-family: Breve-Sans-Text-Medium;
+        src: url(/fonts/BreveSansTextMedium.otf);
+    }
 * {
     margin: 0;
     padding: 0;
