@@ -1,8 +1,20 @@
+@font-face {
+    font-family: Breve-Sans-Text-light;
+    src: url(/fonts/Breve\ Sans\ Text\ Light.otf);
+}
+
+@font-face {
+    font-family: Breve-Sans-Text-Medium;
+    src: url(/fonts/BreveSansTextMedium.otf);
+}
+
 main {
     width: 100%;
     color: #fff;
     padding: 3rem 4rem 2rem 4rem;
+    font-family: Breve-Sans-Text-Medium;
 }
+
 
 main .conteudo {
     display: flex;
@@ -32,7 +44,6 @@ main .bio {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    font-family: "Inika";
 }
 
 main .bio div {
@@ -51,8 +62,12 @@ main .bio p {
     background: rgba(20, 24, 34, 0.4);
     border-radius: 20px;
     padding: 2rem;
+    font-family: Breve-Sans-Text-light;
     max-width: 100%;
     text-align: center;
+}
+h5{
+    font-family: Breve-Sans-Text-light;
 }
 
 main .notificacoes {
@@ -74,6 +89,9 @@ main .notificacoes .notificacao {
 
 main .notificacoes {
     position: relative;
+}
+#hoje {
+font-family: Breve-Sans-Text-medium;
 }
 
 main .notificacoes div {
@@ -120,4 +138,10 @@ main .notificacoes div {
     box-shadow: 0px 1.62162px 6.48649px #0d3b69;
     border-radius: 2px;
     padding: 0.5rem;
+}
+span{
+    font-family: Breve-Sans-Text-Medium;
+}
+.empregadores{
+    color: rgb(253, 253, 253);
 }

@@ -29,28 +29,34 @@ main {
 
 .textos {
     width: 50%;
-    background-image: url(../images/luz.png); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../images/luz.png);
     filter: brightness(1.2);
     background-size: cover;
     background-position: center right;
     text-align: center;
     color: rgb(228, 228, 228);
 }
-#xy-txt{                
+
+#xy-txt {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.textos h1{
+.textos h1 {
     font-family: Breve-Sans-Text-Medium;
     font-size: 54px;
+    width: 80%;
 }
 
-.textos p{
+.textos p {
     font-family: Breve-Sans-Text-light;
     font-size: 28px;
 }
+
 /*-------------lado-dir-------*/
 
 .form {
@@ -74,6 +80,11 @@ input {
     border: 2px solid rgb(255, 255, 255);
 }
 
+.check {
+    width: 20px;
+    height: 20px;
+}
+
 .btnGrey {
     width: 120px;
     height: 45px;
@@ -88,4 +99,6 @@ input {
     cursor: pointer;
 }
 
-
+.linkCon {
+    color: #0B7A9F;
+}

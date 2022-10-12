@@ -73,6 +73,10 @@ input {
     background-color: rgba(20, 24, 34, 1);
     border: 2px solid rgb(255, 255, 255);
 }
+ .check {
+    width: 20px;
+    height: 20px;
+}
 
 .btnGrey {
     width: 120px;
@@ -86,6 +90,10 @@ input {
 .btnGrey:hover {
     background-color: #0B7A9F;
     cursor: pointer;
+}
+
+.linkCon{
+    color: #0B7A9F;
 }
 
 

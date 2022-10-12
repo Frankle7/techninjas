@@ -5,38 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/reset.css">
     <link rel="stylesheet" href="./style/cadastro.css">
-
     <title>Cadastro</title>
-
 </head>
 
 <body>
+    <main>
+        <section class="textos">
+            <div id="xy-txt">
+                <h1 id="titulo">Vamos iniciar! <br> Adicione seus dados <br> para seu usuário</h1>
+                <br><br>
+                <p id="texto">Nossa plataforma é sua maior aliada. <br> Crie uma conta para se conectar com<br>
+                    artistas e contratantes, quando quiser.</p>
+            </div>
+        </section>
 
-    <div class="textos">
-        
-        <h1 id="titulo">Vamos iniciar! <br> Adicione seus dados de usuário</h1>
-        <br><br>
-        <p id="texto">Nossa plataforma é sua maior aliada. <br> Crie uma conta para se conectar com gravadoras,
-            artistas,
-            e empregadores quando quiser.</p>
-    </div>
-    <div class="form">
+        <section class="form">
+                <p class="passos">Passo 1 de 2:</p>
+                <input type="name" placeholder="Nome">
+                <input type="tel" placeholder="Telefone">
+                <input type="email" placeholder="Email">
 
-        <p class="passos">Passo 1 de 2:</p>
-        <input type="text" placeholder="Nome">
-        <input type="text" placeholder="Telefone">
-        <input type="text" placeholder="CPF">
-        <div class="btn">
-            <a href="./cadastro2.html">
-        <input class="avancar" type="button" value="Avançar">
-    </a>
-        </div>
+                <div class="btn">
+                    <a href="../Cadastro/cadastro1.html">
+                        <input class="btnGrey" type="button" value="Artista">
+                    </a>
 
-        
+                    <a href="../Cadastro/cadastro2.html">
+                        <input class="btnGrey" type="button" value="Empregadores">
+                    </a>
+
+                </div>
+        </section>
 
 
+
+    </main>
 </body>
 
 </html>
